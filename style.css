@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(33, 25, 129, 0.9),rgba(26, 26, 128, 0.9)), url(office_img.jpeg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+
+}
+
+
+
+.form-box{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    text-align: center;
+    padding: 50px 60px 70px;
+
+}
+
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    position: relative;
+    color: rgb(6, 6, 124);
+
+
+}
+
+.form-box h1::after{
+    content:'' ;
+    width: 40px;
+    height: 4px;
+    background: rgb(48, 32, 2);
+    border-radius: 3px;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.input-field{
+    background: #eaeaea;
+    display: flex;
+    margin: 15px 0;
+    border-radius: 3px;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding:18px 15px ;
+}
+
+.input-field i{
+    margin-left: 15px;
+    color:rgb(48, 32, 2); 
+}
+ form p{
+    text-align: left;
+    font-size: 14px;
+ }
+
+ form p a{
+    text-decoration: none;
+    color: rgb(48, 32, 2); ;
+
+ }
+
+ .btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .btn-field button{
+    flex-basis: 48%;
+    background:rgb(48, 32, 2); 
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    transition: background 1s;
+    cursor: pointer;
+    color: white;
+    
+ }
+
+ .input-group{
+    height: 280px;
+ }
+
+ .btn-field button.disable{
+    background: #eaeaea;
+    color: #555;
+ }
